@@ -3050,3 +3050,18 @@ Order by colName order;
 
 ```
 
+# CTE - Common Table Expression
+* It is a temporary named result set that you can reference within a single SELECT, INSERT, UPDATE, or DELETE statement.
+* It acts like a Virtual table that is created during query execution, used immediately, and destroyed when the query finishes.
+
+EX:
+```sql
+WITH cte_name AS(
+    SELECT col1, col2
+    FROM table_name
+    WHERE condition
+)
+SELECT *
+FROM cte_name;
+```
+
